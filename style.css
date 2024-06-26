@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #D8D8D8;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.music-player {
+    text-align: center;
+    line-height: 1.2;
+    width: 300px;
+    padding: 25px 10px;
+    border-radius: 30px;
+    border: 6px solid black;
+    background-color: #923cb5;
+    background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);    
+}
+
+
+/*top  ___________________________________________ */
+.music-player .music-player-top {
+    padding: 8px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-player .music-player-top .user-icon i, .search-icon i {
+  font-size: 18px;
+  padding: 2px;
+}
+
+/*central Img & control bar  ___________________________________________ */
+.music-player .music-player-center {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+}
+
+.music-player-center .music-player-disc {
+    max-width: 350px;
+    padding: 20px;
+}
+
+.music-player-disc img {
+    width: 100%;
+}
+
+.music-player-center .music-player-bar {
+    width: 18px;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    border-radius: 20px;
+}
+
+.music-player-bar .bi-music-note-list,.bi-heart,.bi-lightning-charge  {
+    font-size: 20px;
+    line-height: 2;
+    position: relative;
+    right: 10px;
+    color: #b53c8b;
+}
+
+/*Singer & Song title ___________________________________________ */
+.music-player .music-player-song {
+    margin-bottom: 10px;
+}
+
+.music-player-song h1 {
+    color: #fff;
+}
+
+.music-player .music-player-song span, .music-player-line span   {
+    font-size: 13px;
+}
+
+/* timeline  ___________________________________________ */
+.music-player .music-player-line {
+    position: relative;
+    padding: 15px 0;
+}
+
+/* #linea A */
+.music-player-line .music-player-line-a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.music-player-line-a .line {
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+}
+
+/* #linea B */
+.music-player-line-b .line {
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    top: 22px;
+    left: 35px;
+    background-color: #b53c8b;
+}
+
+.music-player-line-b .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffd700;
+    position: absolute;
+    top: 17px;
+    left: 100px;
+}
+
+/* Controls down______________________________________________- */
+
+.music-player .music-player-controls {
+    padding: 10px;
+}
+
+.music-player-controls i {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.music-player-controls .bi-caret-left-fill, .music-player-controls .bi-caret-right-fill  {
+    font-size: 30px;
+} 
+.music-player-controls .bi-pause-circle-fill {
+    font-size: 40px;
+}
+
+.music-player-controls .bi-caret-left-fill, .music-player-controls .bi-caret-right-fill, 
+.music-player-controls .bi-pause-circle-fill {
+    color: #fff;
+}
+
